@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+
+<body style="background-color: white">
+<h1 style="text-align: center">Dashboard Beban Kerja dan Surat Tugas FTI UKDW</h1>
+<!--      <div class = "container" style="text-align: center">-->
+<!--          <form action="{{ url_for('login') }}" method="POST" autocomplete="off">-->
+<!--              <label style="text-align: center">Username</label><br>-->
+<!--              <input type="text" name="username" placeholder="Username anda" value="{{request.form.username}}"><br><br>-->
+<!--              <label style="text-align: center">Password</label><br>-->
+<!--              <input type="password" name="password" placeholder="Password anda" value="{{request.form.password}}"><br><br>-->
+<!--              <input type="submit" value="Login">-->
+<!--          </form>-->
+<!--{%if error %}-->
+<!--        <p class="error"><strong>Error:</strong> {{ error }}-->
+<!--      {% endif %}-->
+<!--</div>-->
+
+<div class = "container" style="text-align: center">
+          <form action="{{url_for('login')}}" method="post" autocomplete="off">
+              <label style="text-align: center">Username</label><br>
+              <input type="text" name="username" id="username" required placeholder="Username anda"><br><br>
+              <label style="text-align: center">Password</label><br>
+              <input type="password" name="password" id="password" required placeholder="Password anda"><br><br>
+              <input type="submit" value="Login" name="">
+          </form>
+
+
+      </div>
+
+
+</div>
+
+
+</body>
+</html>
